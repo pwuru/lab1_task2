@@ -44,7 +44,44 @@
 
             if (result == null)
             {
-                Console.WriteLine("Необходимо ввести не менее четырех чисел.");
+                Console.WriteLine("Необходимо ввести не менее четырех чисел");
+            }
+            else if (result[0] == result[1] && result[0] == result[2] && result[0] == result[3])
+            {
+                Console.WriteLine("Все числа одинаковы и равны: " + result[0]);
+            }
+            else if (result[0] == result[1] && result[0] == result[3])
+            {
+                Console.WriteLine("Два наибольших и второе наименьшее числа одинаковы и равны: " + result[0]);
+                Console.WriteLine("Наименьшее число: " + result[2]);
+            }
+            else if (result[1] == result[2] && result[1] == result[3])
+            {
+                Console.WriteLine("Наибольшее число: " + result[0]);
+                Console.WriteLine("Второе наибольшее и два наименьших числа одинаковы и равны: " + result[1]);
+            }
+            else if (result[0] == result[1] && result[2] == result[3])
+            {
+                Console.WriteLine("Два наибольших числа одинаковы и равны: " + result[0]);
+                Console.WriteLine("Два наименьших числа одинаковы и равны: " + result[2]);
+            }
+            else if (result[0] == result[1])
+            {
+                Console.WriteLine("Два наибольших числа одинаковы и равны: " + result[0]);
+                Console.WriteLine("Наименьшее число: " + result[2]);
+                Console.WriteLine("Второе наименьшее число: " + result[3]);
+            }
+            else if (result[2] == result[3])
+            {
+                Console.WriteLine("Наибольшее число: " + result[0]);
+                Console.WriteLine("Второе наибольшее число: " + result[1]);
+                Console.WriteLine("Два наименьших числа одинаковы и равны: " + result[2]);
+            }
+            else if (result[1] == result[3])
+            {
+                Console.WriteLine("Наибольшее число: " + result[0]);
+                Console.WriteLine("Второе наибольшее и второе наименьшее числа одинаковы и равны: " + result[1]);
+                Console.WriteLine("Наименьшее число: " + result[2]);
             }
             else
             {
